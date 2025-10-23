@@ -9,6 +9,9 @@ class Calculator {
         return this.a + this.b
     }
 
+    subtract() {
+        return this.a - this.b
+    }
     
 }
 
