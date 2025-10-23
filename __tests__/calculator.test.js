@@ -1,7 +1,12 @@
+const Calculator = require ("../src/calculator.js");
+
 describe("To test the code for class Calculator", () => {
 
+
+
     test ("Test for the add method!", () => {
-        
-        expect(add(3, 10)).toBe(13);
+        const calc = new Calculator(3, 13);
+        const result = calc.add();
+        expect(result).toBe(16);
     })
 })
