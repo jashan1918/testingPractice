@@ -16,6 +16,10 @@ class Calculator {
     multiply() {
         return this.a * this.b
     }
+
+    divide() {
+        return this.a / this.b
+    }
 }
 
 module.exports = Calculator

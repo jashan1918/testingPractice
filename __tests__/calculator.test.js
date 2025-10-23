@@ -39,4 +39,16 @@ describe("To test the code for class Calculator", () => {
         const result = calc.multiply();
         expect(result).toBeCloseTo(301.530852)
     })
+
+    test("test for the divide method", () => {
+        const calc = new Calculator(15, 3);
+        const result = calc.divide();
+        expect(result).toBe(5);
+    })
+
+    test("test for the divide method when the input is float", () => {
+        const calc = new Calculator(234.434, 213.675);
+        const result = calc.divide();
+        expect(result).toBeCloseTo(1.09715221715)
+    })
 })
